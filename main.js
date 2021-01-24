@@ -48,7 +48,7 @@ $(document).ready(function() {
             $('p.name').hide();
             $('#name').removeClass('invalid');
             $('p.email').show();
-            $('email').addClass('invalid');
+            $('#email').addClass('invalid');
             return false;
         }
         else if (msg == false) {
