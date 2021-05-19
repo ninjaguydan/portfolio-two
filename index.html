@@ -7,9 +7,12 @@
     <meta name="description" content="Yet another portfolio site coded by Daniel Thompson featuring artwork by Daniel Thompson!">
     <title>Portfolio 2 - Electric Boogaloo</title>
     <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://use.typekit.net/dtm5esi.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="lottie.js" defer></script>
     <script src="main.js" defer></script>
 </head>
@@ -19,7 +22,8 @@
     <ul>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
+        <li><a href="#art">Art</a></li>
+        <li><a href="#carouselExampleIndicators">Projects</a></li>
     </ul>
 
     <div id="social">
@@ -37,10 +41,57 @@
         <p>I’ll be honest. This was just another opportunity to practice building websites while 
             showing off my drawings at the same time. Have a look around. Click stuff. Enjoy.
         </p>
-        <a href="img/download/daniel_thompson_resume_v10.pdf" class="button" target="_blank">Or Hire Me</a>
+        <a href="img/download/daniel_thompson_resume_v11.pdf" class="btn btn-primary" target="_blank">Or Hire Me</a>
     </div>
 
-    <div id="work">
+    <!------------------------------------------------------------------->
+    <div id="carouselExampleIndicators" class="carousel slide projects" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <!-- carousel item here -->
+              <div class="card">
+                  <img src="img/projects/keeper.png" alt="keeper logo">
+                  <div>
+                      <h3>Keeper</h3>
+                      <p>A django app that allows users to create an account, add their favorite books, and leave reviews for those books!</p>
+                      <a href="https://keeper-dt.herokuapp.com/" class="btn keeper" target="_blank">View Live Project</a>
+                      <a href="https://github.com/ninjaguydan/keeper" class="btn keeper2" target="_blank">View Source Code</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <!-- carousel item here -->
+            <div class="card">
+                <img src="img/projects/ng.png" alt="keeper logo">
+                <div>
+                    <h3>Ninja Gold</h3>
+                    <p>A simple luck-based game built with django! It's basically blackjack on steroids. Can you get 100 coins in 10 turns without going over?</p>
+                    <a href="https://ninja-gold-dt.herokuapp.com/" class="btn ng" target="_blank">View Live Project</a>
+                    <a href="https://github.com/ninjaguydan/ninja-gold" class="btn ng2" target="_blank">View Source Code</a>
+                </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item"> -->
+            <!-- carousel item here -->
+          <!-- </div> -->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!------------------------------------------------------------------->
+
+    <div id="art">
         <img src="img/work/0_dp-bw.png" alt="Deadpool Just Playing Some Games" alt-src="img/work/0_dp.png" org-src="img/work/0_dp-bw.png" full="img/work/full/0.jpg">
         <img src="img/work/1_bm-bw.png" alt="Bat Smirk!" alt-src="img/work/1_bm.png" org-src="img/work/1_bm-bw.png" full="img/work/full/1.jpg">
         <img src="img/work/2_w3-bw.png" alt="Lady Geralt?!? Definitely not Ciri" alt-src="img/work/2_w3.png" org-src="img/work/2_w3-bw.png" full="img/work/full/2.jpg">

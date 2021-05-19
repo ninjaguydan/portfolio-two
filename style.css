@@ -1,5 +1,6 @@
 * {
     /* outline: 1px dotted magenta; */
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -35,6 +36,29 @@ body {
     }
 }
 
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.btn-primary {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+}
+.btn-secondary {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
 #dt-anim {
     margin: 0 auto;
     padding-top: 50px;
@@ -51,9 +75,10 @@ ul {
     display: inline-flex;
     transform: rotate(-90deg);
     position: fixed;
-    left: -108px;
-    top: 130px;
+    left: -152px;
+    top: 166px;
     opacity: 0;
+    z-index: 1;
 }
     ul li {
         padding: 20px 20px 0;
@@ -76,6 +101,7 @@ ul {
     right: 0;
     top: 15px;
     opacity: 0;
+    z-index: 1;
 }
     #social a {
         width: 40px;
@@ -135,36 +161,98 @@ ul {
         padding: 0 70px;
         line-height: 2em;
     }
-    .button {
-        display: block;
-        background-color: var(--primary);
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px;
-        width: 150px;
-        border-radius: 50px;
-        cursor: pointer;
-        color: white;
+    #hero .btn {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 30px;
     }
-    #hero .button:hover {
+    #hero .btn:hover {
+        border-color: rgb(0, 100, 109);
         background-color: rgb(0, 100, 109);
     }
-#work {
+.projects {
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+}
+.card {
+    width: 70%;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin: 0 auto;
+}
+    .card img {
+        width: 100%;
+        border-radius: 25px;
+    }
+    .card h3 {
+        color: var(--secondary);
+        font-weight: 600;
+        display: none;
+    }
+    .card p {
+        color: var(--secondary);
+        text-align: left;
+        font-size: 1.25em;
+        line-height: 1.25em;
+        width: 100%;
+        padding: 0;
+        margin: 25px 0;
+    }
+    .card .keeper {
+        background-color: #6633cc;
+        border: 2px solid #6633cc;
+    }
+        .card .keeper:hover {
+            background-color: #773cec;
+            border: 2px solid #773cec;
+        }
+    .card .keeper2 {
+        background-color: transparent;
+        border: 2px solid #4d6edc;
+        color: #4d6edc;
+    }
+        .card .keeper2:hover {
+            background-color: #4d6edc;
+            color: white;
+        }
+    .card .ng {
+        background-color: #ff9d43;
+        border: 2px solid #ff9d43;
+        color: #834914;
+    }
+        .card .ng:hover {
+            background-color: #ff8e25;
+            border: 2px solid #ff8e25;
+        }
+    .card .ng2 {
+        background-color: #FFD257;
+        border: 2px solid #FFD257;
+        color: #834914;
+    }
+        .card .ng2:hover {
+            background-color: #ffc831;
+            border: 2px solid #ffc831;
+        }
+
+#art {
     background-color: var(--secondary);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 70px;
 }
-    #work img {
+    #art img {
         width: 50%;
         margin-bottom: 70px;
         border-radius: 10px;
         cursor: pointer;
         transition: transform .2s;
     }
-    #work img:hover {
+    #art img:hover {
         transform: scale(1.0625);
     }
 .modal {
@@ -363,8 +451,8 @@ ul {
     height: calc(100% - 34px);
 }
 ul {
-    left: -86px;
-    top: 160px;
+    left: -129px;
+    top: 193px;
 }
 #social {
     right: 28px;
@@ -399,16 +487,16 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
-#work img {
+#art img {
     width: 40%;
 }
-#work {
+#art {
     display: grid;
     padding-left: 150px;
     padding-right: 150px;
     grid-template-columns: 1fr 1fr;
 }
-    #work img {
+    #art img {
         justify-self: center;
         width: 70%;
     }
@@ -416,16 +504,22 @@ h2 {
         width: 80%;
         max-width: 1200px;
     }
+.card {
+    width: 50%;
+}
+#hero .btn {
+    width: 50%;
+}
 } /* Media Query End (768) */
 
 
 
 /*---------- For Desktop Widths ----------*/
     
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1080px) {
 
 h1 {
-    font-size: 6em;
+    font-size: 5em;
     margin-bottom: 75px;
 }
 p {
@@ -434,6 +528,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
+    padding: 0;
 }
 a.button, #contact form input[type=submit] {
     font-size: 1.25em;
@@ -452,13 +547,40 @@ h2 {
     background-repeat: no-repeat;
     background-position: 100px -40px;
 }
+#hero .btn {
+    width: 300px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 850px;
+    justify-content: space-between;
+}
+    .card div {
+        width: 50%;
+    }
+    .card img {
+        width: 350px;
+    }
+    .card h3 {
+        display: block;
+    }
+    .card p {
+        width: 100%;
+        margin: 25px 0;
+    }
+    .card a.btn {
+        width: 50%;
+        display: inline;
+        position: relative;
+    }
 #about {
     background: url('img/me_bw.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -350px;
+    background-position: 0 -132px;
 }
-#work, #about, #contact {
+#art, #about, #contact {
     padding: 100px 0;
 }
 #contact form {
@@ -471,7 +593,7 @@ h2 {
         padding: 20px;
         margin-bottom: 35px;
     }
-#work {
+#art {
     display: grid;
     padding-left: 200px;
     padding-right: 200px;

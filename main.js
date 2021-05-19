@@ -7,14 +7,14 @@ $(document).ready(function() {
     }, 1000);
 
     //art hover zoom
-    $('#work img').hover(function(){
+    $('#art img').hover(function(){
         $(this).attr("src", $(this).attr('alt-src'));
     }, function(){
         $(this).attr("src", $(this).attr('org-src'));
     })
 
     //art click Pop Up
-    $('#work img').click(function(){
+    $('#art img').click(function(){
         var modalImg = document.getElementById('img01');
         var captionTxt = document.getElementById('caption');
 
