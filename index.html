@@ -49,36 +49,48 @@
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> -->
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-              <!-- carousel item here -->
-              <div class="card">
-                  <img src="img/projects/keeper.png" alt="keeper logo">
-                  <div>
-                      <h3>Keeper</h3>
-                      <p>A django app that allows users to create an account, add their favorite books, and leave reviews for those books!</p>
-                      <a href="https://keeper-dt.herokuapp.com/" class="btn keeper" target="_blank">View Live Project</a>
-                      <a href="https://github.com/ninjaguydan/keeper" class="btn keeper2" target="_blank">View Source Code</a>
-                  </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <!-- carousel item here -->
-            <div class="card">
-                <img src="img/projects/ng.png" alt="keeper logo">
-                <div>
-                    <h3>Ninja Gold</h3>
-                    <p>A simple luck-based game built with django! It's basically blackjack on steroids. Can you get 100 coins in 10 turns without going over?</p>
-                    <a href="https://ninja-gold-dt.herokuapp.com/" class="btn ng" target="_blank">View Live Project</a>
-                    <a href="https://github.com/ninjaguydan/ninja-gold" class="btn ng2" target="_blank">View Source Code</a>
+            <div class="carousel-item active">
+                <!-- carousel item here -->
+                <div class="card">
+                    <img src="img/projects/keeper.png" alt="keeper logo">
+                    <div>
+                        <h3>Keeper</h3>
+                        <p>A django app that allows users to create an account, add their favorite books, and leave reviews for those books!</p>
+                        <a href="https://keeper-dt.herokuapp.com/" class="btn keeper" target="_blank">View Live Project</a>
+                        <a href="https://github.com/ninjaguydan/keeper" class="btn keeper2" target="_blank">View Source Code</a>
+                    </div>
                 </div>
             </div>
-          </div>
-          <!-- <div class="carousel-item"> -->
+            <div class="carousel-item">
+                <!-- carousel item here -->
+                <div class="card">
+                    <img src="img/projects/ng.png" alt="keeper logo">
+                    <div>
+                        <h3>Ninja Gold</h3>
+                        <p>A simple luck-based game built with django! It's basically blackjack on steroids. Can you get 100 coins in 10 turns without going over?</p>
+                        <a href="https://ninja-gold-dt.herokuapp.com/" class="btn ng" target="_blank">View Live Project</a>
+                        <a href="https://github.com/ninjaguydan/ninja-gold" class="btn ng2" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- carousel item here -->
+                <div class="card">
+                    <img src="img/projects/aarc.png" alt="keeper logo">
+                    <div>
+                        <h3>AARC</h3>
+                        <p>Built entirely by me using Wordpress and some custom jQuery. The site was made for a client committed to bringing an accurate understanding of African American civic engagement to the public discourse.</p>
+                        <a href="https://africanamericanresearch.us/" class="btn aarc" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="carousel-item"> -->
             <!-- carousel item here -->
-          <!-- </div> -->
+            <!-- </div> -->
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -126,25 +138,27 @@
     </div>
 
     <div id="contact">
-        <h2>Need to commission some art? <br>
-            ...or a site built?! 
-        </h2>
+        <h2>Reach out! Let's have a chat.</h2>
         <form action="https://formspree.io/f/myybobea" method="POST" id="valid">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name" placeholder="John Doe">
-            <p class="name" hidden>How am I supposed to know who I'm talking to?!</p>
-            <br>
-            <label for="email">Email</label><br>
-            <input type="email" name="replyto" id="email" placeholder="jdoe@yahoo.com">
-            <p class="email" hidden>How do I reach you?</p>
-            <br>
-            <label for="message">Message</label><br>
-            <textarea name="body" id="message" placeholder="Woah! You're so cool! Take my money \('_')/"></textarea>
-            <p class="message" hidden>Nothing to say? :(</p>
+            <div class="form-group">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" class="form-control" placeholder="John Doe">
+                <p class="name" hidden>How am I supposed to know who I'm talking to?!</p>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" name="replyto" id="email" placeholder="jdoe@yahoo.com" class="form-control">
+                <p class="email" hidden>How do I reach you?</p>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label><br>
+                <textarea class="form-control" name="body" id="message" rows="5" placeholder="Woah! You're so cool! Take my money \( '_' )/"></textarea>
+                <p class="message" hidden>Nothing to say? :(</p>
+            </div>
             <br>
             <input type="submit" value="Submit">
         </form>
-        <a href="#dt-anim">Back To Top! &#129025;</a>
+        <a href="#dt-anim">Back To Top!</a>
         
     </div>
 

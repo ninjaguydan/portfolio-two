@@ -44,7 +44,7 @@ a:hover {
 .btn {
     display: block;
     width: 100%;
-    padding: 15px 30px;
+    padding: 10px 30px;
     color: white;
     text-align: center;
     border-radius: 30px;
@@ -237,6 +237,22 @@ ul {
             background-color: #ffc831;
             border: 2px solid #ffc831;
         }
+    .aarc {
+        background-color: #fd4a45;
+        border-color: #fd4a45;
+    }
+        .aarc:hover {
+            background-color:#c13834;
+            border-color:#c13834;
+        }
+    .aarc2 {
+        background-color: #808080;
+        border-color: #808080;
+    }
+        .aarc2:hover {
+            background-color: #707070;
+            border-color: #707070;
+        }
 
 #art {
     background-color: var(--secondary);
@@ -296,7 +312,7 @@ ul {
             transform: scale(1);
         }
     }
-    @-webkit-keyframes {
+    @-webkit-keyframes zoom {
         from {
             transform: scale(0);
         } to {
@@ -377,22 +393,20 @@ ul {
         color:yellow;
         text-align: left;
     }
-        #contact form input, textarea {
+        #contact form input, textarea.form-control {
             box-sizing: border-box;
             width: 100%;
             cursor: pointer;
             border: none;
             border-radius: 5px;
-            padding: 10px;
+            padding: .375rem .75rem;
             margin-top: 10px;
-            margin-bottom: 25px;
             background-color: rgba(255, 255, 255, 0.6);
         }
         #contact form input[type=submit] {
             border-radius: 40px;
             background-color: white;
             color: var(--primary);
-            padding: 20px;
         }
         #contact form input[type=submit]:hover {
             background-color: rgb(223, 235, 234);
@@ -586,12 +600,11 @@ h2 {
 #contact form {
     width: 550px;
 }
+    #contact form label {
+        margin: 0;
+    }
     #contact form label, #contact a {
         font-size: 1.5em;
-    }
-    #contact form input, textarea {
-        padding: 20px;
-        margin-bottom: 35px;
     }
 #art {
     display: grid;
