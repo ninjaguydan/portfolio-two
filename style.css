@@ -253,6 +253,22 @@ ul {
             background-color: #707070;
             border-color: #707070;
         }
+    .da {
+        background-color: #f12849;
+        border-color: #f12849;
+    }
+        .da:hover {
+            background-color:#d41a39;
+            border-color:#d41a39;
+        }
+    .da2 {
+        background-color: #353535;
+        border-color: #353535;
+    }
+        .da2:hover {
+            background-color: #303030;
+            border-color: #303030;
+        }
 
 #art {
     background-color: var(--secondary);
